@@ -2,579 +2,141 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timetable - Student Hub Portal</title>
-
+    <link rel="stylesheet" href="C:\Users\shahm\OneDrive\Desktop\Student Hub Portal\Style css\style.css">
 </head>
-
 
 <body>
 
+<div class="dashboard">
 
-<!-- ===================================================== -->
-<!--              STUDENT HUB PORTAL HEADER               -->
-<!-- ===================================================== -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2>StudentHub</h2>
+        </div>
+        <nav class="sidebar-links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html">Profile</a>
+            <a href="attendance.html">Attendance</a>
+            <a href="courses.html">Courses</a>
+            <a href="assignments.html">Assignments</a>
+            <a href="studymaterials.html">Study Material</a>
+            <a href="timetable.html" class="active">Timetable</a>
+            <a href="results.html">Results</a>
+            <a href="library.html">Library</a>
+            <a href="placement.html">Placement</a>
+            <a href="noticeboard.html">Notice Board</a>
+        </nav>
+        <div class="sidebar-footer">
+            <a href="logout.html">Logout</a>
+        </div>
+    </aside>
 
-<table border="1"
-       width="100%"
-       cellspacing="0"
-       cellpadding="10">
+    <main class="main-content" id="mainContent">
 
+        <div class="topbar">
+            <div style="display:flex; align-items:center; gap:15px;">
+                <button id="sidebarToggle" class="toggle-btn" aria-label="Toggle sidebar">&#9776;</button>
+                <div>
+                    <h1>Timetable</h1>
+                    <p>Your full weekly class schedule.</p>
+                </div>
+            </div>
+            <div style="display:flex; align-items:right; gap:20px;">
+                <a href="notifications.html">🔔 Notifications</a>
+            </div>
+        </div>
 
-    <tr>
+        <!-- ============== WEEKLY TIMETABLE ============== -->
+        <div class="card">
 
-        <td align="center">
-
-
-            <!-- Logo -->
-
-            <img src="logo.png"
-                 alt="Student Hub Portal Logo"
-                 width="50">
-
-
-            <!-- Portal Name -->
-
-            <h1>
-                Student Hub Portal
-            </h1>
-
-
-        </td>
-
-    </tr>
-
-
-</table>
-
-
-<br>
-
-
-<!-- ===================================================== -->
-<!--          SIDEBAR + TIMETABLE CONTENT                  -->
-<!-- ===================================================== -->
-
-<table width="100%"
-       cellspacing="10"
-       cellpadding="10">
-
-
-    <tr>
-
-
-        <!-- ================= SIDEBAR ================= -->
-
-        <td width="25%"
-            valign="top">
-
-
-            <table border="1"
-                   width="100%"
-                   height="100%"
-                   cellspacing="0"
-                   cellpadding="12">
-
+            <table class="styled-table" width="100%">
 
                 <tr>
-
-                    <td>
-
-                        <b>
-                            Sidebar
-                        </b>
-
-                    </td>
-
+                    <th>Time</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
                 </tr>
-
 
                 <tr>
-
-                    <td>
-
-                        <a href="dashboard.html">
-                            Dashboard
-                        </a>
-
-                    </td>
-
+                    <td>9:00–10:00</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
                 </tr>
-
 
                 <tr>
-
-                    <td>
-
-                        <a href="profile.html">
-                            Profile
-                        </a>
-
-                    </td>
-
+                    <td>10:00–11:00</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
                 </tr>
-
 
                 <tr>
-
-                    <td>
-
-                        <a href="attendance.html">
-                            Attendance
-                        </a>
-
-                    </td>
-
+                    <td>11:00–12:00</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
                 </tr>
-
 
                 <tr>
-
-                    <td>
-
-                        <a href="courses.html">
-                            Courses
-                        </a>
-
-                    </td>
-
+                    <td>12:00–1:00</td>
+                    <td colspan="6" align="center" class="lunch-row"><b>LUNCH</b></td>
                 </tr>
-
 
                 <tr>
-
-                    <td>
-
-                        <a href="assignments.html">
-                            Assignments
-                        </a>
-
-                    </td>
-
+                    <td>1:00–2:00</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
                 </tr>
-
 
                 <tr>
-
-                    <td>
-
-                        <a href="study-material.html">
-                            Study Material
-                        </a>
-
-                    </td>
-
+                    <td>2:00–3:00</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
                 </tr>
-
-
-                <tr>
-
-                    <td>
-
-                        <a href="timetable.html">
-                            Timetable
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
-
-                        <a href="results.html">
-                            Results
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
-
-                        <a href="library.html">
-                            Library
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
-
-                        <a href="placement.html">
-                            Placement
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
-
-                        <a href="notice-board.html">
-                            Notice Board
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
-
-                        <a href="contact.html">
-                            Contact
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
-
-                        <a href="logout.html">
-                            Logout
-                        </a>
-
-                    </td>
-
-                </tr>
-
 
             </table>
 
+        </div>
 
-        </td>
+    </main>
 
+</div>
 
-        <!-- ================= TIMETABLE CONTENT ================= -->
+<script>
+    const sidebar = document.getElementById('sidebar');
+    const mainContent = document.getElementById('mainContent');
+    const toggleBtn = document.getElementById('sidebarToggle');
 
-        <td width="75%"
-            valign="top">
-
-
-            <table border="1"
-                   width="100%"
-                   cellspacing="0"
-                   cellpadding="10">
-
-
-                <!-- ================= TABLE HEADER ================= -->
-
-                <tr>
-
-
-                    <th>
-                        Time
-                    </th>
-
-
-                    <th>
-                        Mon
-                    </th>
-
-
-                    <th>
-                        Tue
-                    </th>
-
-
-                    <th>
-                        Wed
-                    </th>
-
-
-                    <th>
-                        Thu
-                    </th>
-
-
-                    <th>
-                        Fri
-                    </th>
-
-
-                    <th>
-                        Sat
-                    </th>
-
-
-                </tr>
-
-
-                <!-- ================= 9:00 - 10:00 ================= -->
-
-                <tr>
-
-
-                    <td>
-                        9:00–10:00
-                    </td>
-
-
-                    <td>
-                        ---
-                    </td>
-
-
-                    <td>
-                        ---
-                    </td>
-
-
-                    <td>
-                        ---
-                    </td>
-
-
-                    <td>
-                        ---
-                    </td>
-
-
-                    <td>
-                        ---
-                    </td>
-
-
-                    <td>
-                        ---
-                    </td>
-
-
-                </tr>
-
-
-                <!-- ================= 10:00 - 11:00 ================= -->
-
-                <tr>
-
-
-                    <td>
-                        10:00–11:00
-                    </td>
-
-
-                    <td>
-                        ---
-                    </td>
-
-
-                    <td>
-                        ---
-                    </td>
-
-
-                    <td>
-                        ---
-                    </td>
-
-
-                    <td>
-                        ---
-                    </td>
-
-
-                    <td>
-                        ---
-                    </td>
-
-
-                    <td>
-                        ---
-                    </td>
-
-
-                </tr>
-
-
-                <!-- ================= 11:00 - 12:00 ================= -->
-
-                <tr>
-
-
-                    <td>
-                        11:00–12:00
-                    </td>
-
-
-                    <td>
-                        ---
-                    </td>
-
-
-                    <td>
-                        ---
-                    </td>
-
-
-                    <td>
-                        ---
-                    </td>
-
-
-                    <td>
-                        ---
-                    </td>
-
-
-                    <td>
-                        ---
-                    </td>
-
-
-                    <td>
-                        ---
-                    </td>
-
-
-                </tr>
-
-
-                <!-- ================= LUNCH ================= -->
-
-                <tr>
-
-
-                    <td>
-                        12:00–1:00
-                    </td>
-
-
-                    <td colspan="6"
-                        align="center">
-
-
-                        <b>
-                            LUNCH
-                        </b>
-
-
-                    </td>
-
-
-                </tr>
-
-
-                <!-- ================= 1:00 - 2:00 ================= -->
-
-                <tr>
-
-
-                    <td>
-                        1:00–2:00
-                    </td>
-
-
-                    <td>
-                        ---
-                    </td>
-
-
-                    <td>
-                        ---
-                    </td>
-
-
-                    <td>
-                        ---
-                    </td>
-
-
-                    <td>
-                        ---
-                    </td>
-
-
-                    <td>
-                        ---
-                    </td>
-
-
-                    <td>
-                        ---
-                    </td>
-
-
-                </tr>
-
-
-                <!-- ================= 2:00 - 3:00 ================= -->
-
-                <tr>
-
-
-                    <td>
-                        2:00–3:00
-                    </td>
-
-
-                    <td>
-                        ---
-                    </td>
-
-
-                    <td>
-                        ---
-                    </td>
-
-
-                    <td>
-                        ---
-                    </td>
-
-
-                    <td>
-                        ---
-                    </td>
-
-
-                    <td>
-                        ---
-                    </td>
-
-
-                    <td>
-                        ---
-                    </td>
-
-
-                </tr>
-
-
-            </table>
-
-
-        </td>
-
-
-    </tr>
-
-
-</table>
-
+    toggleBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('collapsed');
+        mainContent.classList.toggle('expanded');
+    });
+</script>
 
 </body>
 

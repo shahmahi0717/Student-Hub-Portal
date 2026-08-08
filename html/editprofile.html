@@ -2,569 +2,202 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Profile - Student Hub Portal</title>
-
+    <link rel="stylesheet" href="C:\Users\shahm\OneDrive\Desktop\Student Hub Portal\Style css\style.css">
 </head>
-
 
 <body>
 
+<div class="dashboard">
 
-<!-- ===================================================== -->
-<!--              STUDENT HUB PORTAL HEADER               -->
-<!-- ===================================================== -->
+    <!-- ================================================= -->
+    <!--                     SIDEBAR                        -->
+    <!-- ================================================= -->
 
-<table border="1"
-       width="100%"
-       cellspacing="0"
-       cellpadding="10">
+    <aside class="sidebar" id="sidebar">
 
+        <div class="sidebar-header">
+            <h2>StudentHub</h2>
+        </div>
 
-    <tr>
+        <!-- Scrollable nav links -->
+        <nav class="sidebar-links">
 
-        <td align="center">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html" class="active">Profile</a>
+            <a href="attendance.html">Attendance</a>
+            <a href="courses.html">Courses</a>
+            <a href="assignments.html">Assignments</a>
+            <a href="studymaterials.html">Study Material</a>
+            <a href="timetable.html">Timetable</a>
+            <a href="results.html">Results</a>
+            <a href="library.html">Library</a>
+            <a href="placement.html">Placement</a>
+            <a href="noticeboard.html">Notice Board</a>
 
+        </nav>
 
-            <!-- Logo -->
+        <!-- Logout pinned to bottom-left of sidebar -->
+        <div class="sidebar-footer">
+            <a href="logout.html">Logout</a>
+        </div>
 
-            <img src="logo.png"
-                 alt="Student Hub Portal Logo"
-                 width="50">
+    </aside>
 
+    <!-- ================================================= -->
+    <!--                  MAIN CONTENT                      -->
+    <!-- ================================================= -->
 
-            <!-- Portal Name -->
+    <main class="main-content" id="mainContent">
 
-            <h1>
-                Student Hub Portal
-            </h1>
+        <!-- ============== TOP BAR ============== -->
+        <div class="topbar">
 
+            <div style="display:flex; align-items:center; gap:15px;">
 
-        </td>
-
-    </tr>
-
-
-</table>
-
-
-<br>
-
-
-<!-- ===================================================== -->
-<!--          SIDEBAR + EDIT PROFILE CONTENT               -->
-<!-- ===================================================== -->
-
-<table width="100%"
-       cellspacing="10"
-       cellpadding="10">
-
-
-    <tr>
-
-
-        <!-- ================= SIDEBAR ================= -->
-
-        <td width="25%"
-            valign="top">
-
-
-            <table border="1"
-                   width="100%"
-                   cellspacing="0"
-                   cellpadding="12">
-
-
-                <tr>
-
-                    <td>
-
-                        <b>
-                            Sidebar
-                        </b>
-
-                    </td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
-
-                        <a href="dashboard.html">
-                            Dashboard
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
-
-                        <a href="profile.html">
-                            Profile
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
-
-                        <a href="attendance.html">
-                            Attendance
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
-
-                        <a href="courses.html">
-                            Courses
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
-
-                        <a href="assignments.html">
-                            Assignments
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
-
-                        <a href="study-material.html">
-                            Study Material
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
-
-                        <a href="timetable.html">
-                            Timetable
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
-
-                        <a href="results.html">
-                            Results
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
-
-                        <a href="library.html">
-                            Library
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
-
-                        <a href="placement.html">
-                            Placement
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
-
-                        <a href="notice-board.html">
-                            Notice Board
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
-
-                        <a href="contact.html">
-                            Contact
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
-
-                        <a href="logout.html">
-                            Logout
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-            </table>
-
-
-        </td>
-
-
-        <!-- ================= EDIT PROFILE CONTENT ================= -->
-
-        <td width="75%"
-            valign="top">
-
-
-            <h2>
-                Edit Profile
-            </h2>
-
-
-            <!-- Profile Editing Form -->
-
-            <form action="profile.html"
-                  method="post">
-
-
-                <table border="1"
-                       width="100%"
-                       cellspacing="0"
-                       cellpadding="12">
-
-
-                    <!-- Profile Photo -->
-
-                    <tr>
-
-
-                        <td width="30%">
-
-                            <b>
-                                Profile Photo
-                            </b>
-
-                        </td>
-
-
-                        <td>
-
-
-                            <img src="student-photo.png"
-                                 alt="Current Student Photo"
-                                 width="100"
-                                 height="100">
-
-
-                            <br>
-                            <br>
-
-
-                            <label>
-                                Change Photo:
-                            </label>
-
-
-                            <input type="file"
-                                   name="studentPhoto">
-
-
-                        </td>
-
-
-                    </tr>
-
-
-                    <!-- Name -->
-
-                    <tr>
-
-
-                        <td>
-
-                            <label for="name">
-
-                                <b>
-                                    Name
-                                </b>
-
-                            </label>
-
-                        </td>
-
-
-                        <td>
-
-                            <input type="text"
-                                   id="name"
-                                   name="name"
-                                   value="Student Name"
-                                   size="40">
-
-                        </td>
-
-
-                    </tr>
-
-
-                    <!-- Enrollment -->
-
-                    <tr>
-
-
-                        <td>
-
-                            <label for="enrollment">
-
-                                <b>
-                                    Enrollment
-                                </b>
-
-                            </label>
-
-                        </td>
-
-
-                        <td>
-
-                            <input type="text"
-                                   id="enrollment"
-                                   name="enrollment"
-                                   value="20260001"
-                                   size="40">
-
-                        </td>
-
-
-                    </tr>
-
-
-                    <!-- Email -->
-
-                    <tr>
-
-
-                        <td>
-
-                            <label for="email">
-
-                                <b>
-                                    Email
-                                </b>
-
-                            </label>
-
-                        </td>
-
-
-                        <td>
-
-                            <input type="email"
-                                   id="email"
-                                   name="email"
-                                   value="student@example.com"
-                                   size="40">
-
-                        </td>
-
-
-                    </tr>
-
-
-                    <!-- Mobile -->
-
-                    <tr>
-
-
-                        <td>
-
-                            <label for="mobile">
-
-                                <b>
-                                    Mobile
-                                </b>
-
-                            </label>
-
-                        </td>
-
-
-                        <td>
-
-                            <input type="tel"
-                                   id="mobile"
-                                   name="mobile"
-                                   value="9876543210"
-                                   size="40">
-
-                        </td>
-
-
-                    </tr>
-
-
-                    <!-- Department -->
-
-                    <tr>
-
-
-                        <td>
-
-                            <label for="department">
-
-                                <b>
-                                    Department
-                                </b>
-
-                            </label>
-
-                        </td>
-
-
-                        <td>
-
-                            <input type="text"
-                                   id="department"
-                                   name="department"
-                                   value="Computer Science"
-                                   size="40">
-
-                        </td>
-
-
-                    </tr>
-
-
-                    <!-- Semester -->
-
-                    <tr>
-
-
-                        <td>
-
-                            <label for="semester">
-
-                                <b>
-                                    Semester
-                                </b>
-
-                            </label>
-
-                        </td>
-
-
-                        <td>
-
-                            <input type="text"
-                                   id="semester"
-                                   name="semester"
-                                   value="Semester 4"
-                                   size="40">
-
-                        </td>
-
-
-                    </tr>
-
-
-                </table>
-
-
-                <br>
-
-
-                <!-- Buttons -->
-
-                <button type="submit">
-
-                    Save Changes
-
+                <!-- Sidebar toggle button -->
+                <button id="sidebarToggle" class="toggle-btn" aria-label="Toggle sidebar">
+                    &#9776;
                 </button>
 
+                <div>
+                    <h1>Edit Profile</h1>
+                    <p>Update your personal and academic information.</p>
+                </div>
 
-                &nbsp;&nbsp;
+            </div>
 
-
-                <a href="profile.html">
-
-                    <button type="button">
-
-                        Cancel
-
-                    </button>
-
-                </a>
+            <div style="display:flex; align-items:right; gap:20px;">
 
 
-            </form>
+                <a href="notifications.html">🔔 Notifications</a>
 
+            </div>
 
-        </td>
+        </div>
 
+        <!-- ============== EDIT PROFILE FORM ============== -->
+        <form action="profile.html" method="post">
 
-    </tr>
+            <!-- ---------- Profile Photo ---------- -->
+            <div class="card">
 
+                <h2>Profile Photo</h2>
+                <br>
 
-</table>
+                <div class="photo-edit-row">
 
+                    <div class="profile-avatar">
+                        <img src="student-photo.png" alt="Current Student Photo">
+                    </div>
+
+                    <div class="photo-upload">
+                        <label for="studentPhoto">Change Photo</label>
+                        <input type="file" id="studentPhoto" name="studentPhoto">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <br>
+
+            <!-- ---------- Personal Information ---------- -->
+            <div class="card">
+
+                <h2>Personal Information</h2>
+                <br>
+
+                <div class="form-fields-grid">
+
+                    <div class="form-field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" value="Student Name">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" value="student@example.com">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="mobile">Mobile</label>
+                        <input type="tel" id="mobile" name="mobile" value="9876543210">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" placeholder="Enter your address">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <br>
+
+            <!-- ---------- Academic Information ---------- -->
+            <div class="card">
+
+                <h2>Academic Information</h2>
+                <br>
+
+                <div class="form-fields-grid">
+
+                    <div class="form-field">
+                        <label for="enrollment">Enrollment Number</label>
+                        <input type="text" id="enrollment" name="enrollment" value="20260001">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="department">Department</label>
+                        <input type="text" id="department" name="department" value="Computer Science">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="semester">Semester</label>
+                        <input type="text" id="semester" name="semester" value="Semester 4">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="batch">Batch / Year</label>
+                        <input type="text" id="batch" name="batch" placeholder="e.g. 2023-2027">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <br>
+
+            <!-- ---------- Form Actions ---------- -->
+            <div class="card">
+
+                <div class="account-actions">
+                    <button type="submit">Save Changes</button>
+                    <a href="profile.html"><button type="button" class="btn-secondary">Cancel</button></a>
+                </div>
+
+            </div>
+
+        </form>
+
+    </main>
+
+</div>
+
+<script>
+    const sidebar = document.getElementById('sidebar');
+    const mainContent = document.getElementById('mainContent');
+    const toggleBtn = document.getElementById('sidebarToggle');
+
+    toggleBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('collapsed');
+        mainContent.classList.toggle('expanded');
+    });
+</script>
 
 </body>
 

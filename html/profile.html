@@ -2,394 +2,271 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Hub Portal - Profile</title>
-
+    <link rel="stylesheet" href="C:\Users\shahm\OneDrive\Desktop\Student Hub Portal\Style css\style.css">
 </head>
-
 
 <body>
 
+<div class="dashboard">
 
-<!-- ===================================================== -->
-<!--                  PAGE TITLE                           -->
-<!-- ===================================================== -->
+    <!-- ================================================= -->
+    <!--                     SIDEBAR                        -->
+    <!-- ================================================= -->
 
-<p>
-    Page 5: Profile Page
-</p>
+    <aside class="sidebar" id="sidebar">
 
+        <div class="sidebar-header">
+            <h2>StudentHub</h2>
+        </div>
 
-<!-- ===================================================== -->
-<!--              STUDENT HUB PORTAL HEADER               -->
-<!-- ===================================================== -->
+        <!-- Scrollable nav links -->
+        <nav class="sidebar-links">
 
-<table border="1"
-       width="100%"
-       cellspacing="0"
-       cellpadding="10">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html" class="active">Profile</a>
+            <a href="attendance.html">Attendance</a>
+            <a href="courses.html">Courses</a>
+            <a href="assignments.html">Assignments</a>
+            <a href="studymaterials.html">Study Material</a>
+            <a href="timetable.html">Timetable</a>
+            <a href="results.html">Results</a>
+            <a href="library.html">Library</a>
+            <a href="placement.html">Placement</a>
+            <a href="noticeboard.html">Notice Board</a>
 
+        </nav>
 
-    <tr>
+        <!-- Logout pinned to bottom-left of sidebar -->
+        <div class="sidebar-footer">
+            <a href="logout.html">Logout</a>
+        </div>
 
-        <td align="center">
+    </aside>
 
+    <!-- ================================================= -->
+    <!--                  MAIN CONTENT                      -->
+    <!-- ================================================= -->
 
-            <!-- Logo -->
+    <main class="main-content" id="mainContent">
 
-            <img src="logo.png"
-                 alt="Student Hub Portal Logo"
-                 width="50">
+        <!-- ============== TOP BAR ============== -->
+        <div class="topbar">
 
+            <div style="display:flex; align-items:center; gap:15px;">
 
-            <!-- Portal Name -->
-
-            <h1>
-                Student Hub Portal
-            </h1>
-
-
-        </td>
-
-    </tr>
-
-
-</table>
-
-
-<br>
-
-
-<!-- ===================================================== -->
-<!--          SIDEBAR + PROFILE CONTENT                    -->
-<!-- ===================================================== -->
-
-<table width="100%"
-       cellspacing="10"
-       cellpadding="10">
-
-
-    <tr>
-
-
-        <!-- ================= SIDEBAR ================= -->
-
-        <td width="25%"
-            valign="top">
-
-
-            <table border="1"
-                   width="100%"
-                   cellspacing="0"
-                   cellpadding="12">
-
-
-                <!-- Sidebar Heading -->
-
-                <tr>
-
-                    <td>
-
-                        <b>
-                            Sidebar
-                        </b>
-
-                    </td>
-
-                </tr>
-
-
-                <!-- Navigation -->
-
-                <tr>
-
-                    <td>
-
-                        <a href="dashboard.html">
-                            Dashboard
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
-
-                        <a href="profile.html">
-                            Profile
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
-
-                        <a href="attendance.html">
-                            Attendance
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
-
-                        <a href="courses.html">
-                            Courses
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
-
-                        <a href="assignments.html">
-                            Assignments
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
-
-                        <a href="study-material.html">
-                            Study Material
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
-
-                        <a href="timetable.html">
-                            Timetable
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
-
-                        <a href="results.html">
-                            Results
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
-
-                        <a href="library.html">
-                            Library
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
-
-                        <a href="placement.html">
-                            Placement
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
-
-                        <a href="notice-board.html">
-                            Notice Board
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
-
-                        <a href="contact.html">
-                            Contact
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-                <!-- Logout -->
-
-                <tr>
-
-                    <td>
-
-                        <a href="logout.html">
-                            Logout
-                        </a>
-
-                    </td>
-
-                </tr>
-
-
-            </table>
-
-
-        </td>
-
-
-        <!-- ================= PROFILE CONTENT ================= -->
-
-        <td width="75%"
-            valign="top">
-
-
-            <!-- Profile Information Box -->
-
-            <table border="1"
-                   width="100%"
-                   cellspacing="0"
-                   cellpadding="10">
-
-
-                <tr>
-
-
-                    <!-- Photo -->
-
-                    <td width="20%"
-                        align="center"
-                        valign="middle">
-
-
-                        <img src="student-photo.png"
-                             alt="Student Photo"
-                             width="120"
-                             height="120">
-
-
-                    </td>
-
-
-                    <!-- Student Information -->
-
-                    <td valign="top">
-
-
-                        <p>
-                            <b>Name:</b>
-                            __________________
-                        </p>
-
-
-                        <p>
-                            <b>Enrollment:</b>
-                            __________________
-                        </p>
-
-
-                        <p>
-                            <b>Email:</b>
-                            __________________
-                        </p>
-
-
-                        <p>
-                            <b>Mobile:</b>
-                            __________________
-                        </p>
-
-
-                        <p>
-                            <b>Department:</b>
-                            __________________
-                        </p>
-
-
-                        <p>
-                            <b>Semester:</b>
-                            __________________
-                        </p>
-
-
-                    </td>
-
-
-                </tr>
-
-
-            </table>
-
-
-            <br>
-
-
-            <!-- Edit Profile Button -->
-
-            <a href="edit-profile.html">
-
-                <button type="button">
-
-                    Edit Profile
-
+                <!-- Sidebar toggle button -->
+                <button id="sidebarToggle" class="toggle-btn" aria-label="Toggle sidebar">
+                    &#9776;
                 </button>
 
-            </a>
+                <div>
+                    <h1>My Profile</h1>
+                    <p>View and manage your personal and academic details.</p>
+                </div>
+
+            </div>
+
+            <div style="display:flex; align-items:right; gap:20px;">
 
 
-        </td>
+                <a href="notifications.html">🔔 Notifications</a>
 
+            </div>
 
-    </tr>
+        </div>
 
+        <!-- ============== PROFILE HEADER CARD ============== -->
+        <div class="card profile-header-card">
 
-</table>
+            <div class="profile-header-inner">
 
+                <!-- Avatar -->
+                <div class="profile-avatar">
+                    <img src="student-photo.png" alt="Student Photo">
+                    <span class="avatar-edit" title="Change photo">📷</span>
+                </div>
+
+                <!-- Name + quick tags -->
+                <div class="profile-header-text">
+                    <h2 class="profile-name">__________________</h2>
+                    <p class="profile-subtext">__________________ &nbsp;•&nbsp; Semester __________________</p>
+                </div>
+
+                <a href="editprofile.html" class="edit-profile-btn">
+                    <button type="button">Edit Profile</button>
+                </a>
+
+            </div>
+
+            <!-- Profile completion -->
+            <div class="profile-completion">
+                <div class="completion-label">
+                    <span>Profile Completion</span>
+                    <span>60%</span>
+                </div>
+                <div class="completion-bar">
+                    <div class="completion-fill" style="width:60%;"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <br>
+
+        <!-- ============== QUICK STATS STRIP ============== -->
+        <div class="dashboard-grid">
+
+            <div class="dashboard-card">
+                <a href="attendance.html">
+                    <h2>75%</h2>
+                    <h3>Attendance</h3>
+                    <p>View Attendance</p>
+                </a>
+            </div>
+
+            <div class="dashboard-card">
+                <a href="results.html">
+                    <h2>8.2 CGPA</h2>
+                    <h3>Current CGPA</h3>
+                    <p>View Results</p>
+                </a>
+            </div>
+
+            <div class="dashboard-card">
+                <a href="courses.html">
+                    <h2>6</h2>
+                    <h3>Enrolled Courses</h3>
+                    <p>View Courses</p>
+                </a>
+            </div>
+
+        </div>
+
+        <br>
+
+        <!-- ============== PERSONAL INFORMATION ============== -->
+        <div class="card">
+
+            <h2>Personal Information</h2>
+            <br>
+
+            <div class="profile-fields-grid">
+
+                <div class="profile-field">
+                    <span class="field-icon">👤</span>
+                    <div>
+                        <p class="field-label">Full Name</p>
+                        <p class="field-value">__________________</p>
+                    </div>
+                </div>
+
+                <div class="profile-field">
+                    <span class="field-icon">✉️</span>
+                    <div>
+                        <p class="field-label">Email</p>
+                        <p class="field-value">__________________</p>
+                    </div>
+                </div>
+
+                <div class="profile-field">
+                    <span class="field-icon">📱</span>
+                    <div>
+                        <p class="field-label">Mobile</p>
+                        <p class="field-value placeholder">Not added yet</p>
+                    </div>
+                </div>
+
+                <div class="profile-field">
+                    <span class="field-icon">🏠</span>
+                    <div>
+                        <p class="field-label">Address</p>
+                        <p class="field-value placeholder">Not added yet</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <br>
+
+        <!-- ============== ACADEMIC INFORMATION ============== -->
+        <div class="card">
+
+            <h2>Academic Information</h2>
+            <br>
+
+            <div class="profile-fields-grid">
+
+                <div class="profile-field">
+                    <span class="field-icon">🎓</span>
+                    <div>
+                        <p class="field-label">Enrollment Number</p>
+                        <p class="field-value">__________________</p>
+                    </div>
+                </div>
+
+                <div class="profile-field">
+                    <span class="field-icon">🏫</span>
+                    <div>
+                        <p class="field-label">Department</p>
+                        <p class="field-value">__________________</p>
+                    </div>
+                </div>
+
+                <div class="profile-field">
+                    <span class="field-icon">📚</span>
+                    <div>
+                        <p class="field-label">Semester</p>
+                        <p class="field-value">__________________</p>
+                    </div>
+                </div>
+
+                <div class="profile-field">
+                    <span class="field-icon">🆔</span>
+                    <div>
+                        <p class="field-label">Batch / Year</p>
+                        <p class="field-value placeholder">Not added yet</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <br>
+
+        <!-- ============== ACCOUNT SETTINGS ============== -->
+        <div class="card">
+
+            <h2>Account</h2>
+            <br>
+
+            <div class="account-actions">
+                <a href="editprofile.html"><button type="button">Edit Profile</button></a>
+                <a href="changepassword.html"><button type="button" class="btn-secondary">Change Password</button></a>
+                <a href="idcard.html"><button type="button" class="btn-secondary">Download ID Card</button></a>
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script>
+    const sidebar = document.getElementById('sidebar');
+    const mainContent = document.getElementById('mainContent');
+    const toggleBtn = document.getElementById('sidebarToggle');
+
+    toggleBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('collapsed');
+        mainContent.classList.toggle('expanded');
+    });
+</script>
 
 </body>
 

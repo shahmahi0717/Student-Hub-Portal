@@ -1,206 +1,116 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudentHub Portal</title>
+    <!-- Relative CSS Path: Works on all browsers/devices -->
+    <link rel="stylesheet" href="C:\Users\shahm\OneDrive\Desktop\Student Hub Portal\Style css\style.css">
 </head>
-
 <body>
-
     <!-- ================= HEADER ================= -->
-
-    <table border="1" width="100%" cellpadding="10">
-        <tr>
-
-            <td width="20%">
-                <h3>LOGO</h3>
-            </td>
-
-            <td align="right">
-
-                <button onclick="window.location.href='home.html'">
-                    Home
-                </button>
-                &nbsp;&nbsp;
-
-                <button onclick="window.location.href='about.html'">
-                    About
-                </button>
-
-                &nbsp;&nbsp;
-
-                <button onclick="window.location.href='courses.html'">
-                    Courses
-                </button>
-
-                &nbsp;&nbsp;
-
-                <button onclick="window.location.href='events.html'">
-                    Events
-                </button>
-                &nbsp;&nbsp;
-
-                <button onclick="window.location.href='contact.html'">
-                    Contact
-                </button>
-
-                &nbsp;&nbsp;
-
-            </td>
-
-        </tr>
-    </table>
-
-    <br>
-
+    <header class="header-container">
+        <div class="logo">
+            <h3>LOGO</h3>
+        </div>
+        <nav class="header-nav">
+            <button onclick="window.location.href='home.html'">Home</button>
+        </nav>
+    </header>
     <!-- ================= HERO SECTION ================= -->
-
-    <table border="1" width="100%" cellpadding="20">
-
-        <tr>
-
-            <td align="center">
-
-                <h3>Banner Image Placeholder</h3>
-
-                <br>
-
-                <h1>Welcome to StudentHub Portal</h1>
-
-                <p>
-                    A single platform where students can access courses,
-                    assignments, attendance, study materials, library,
-                    results and placement information.
-                </p>
-
-                <br>
-
-                 <button onclick="window.location.href='courses.html'">
-                    Explore Courses
-                </button>
-
-                &nbsp;&nbsp;
-
-                <button onclick="window.location.href='login.html'">
-                    Student Login
-                </button>
-
-            </td>
-
-        </tr>
-
-    </table>
-
-    <br>
-
-    <!-- ================= FEATURE CARDS ================= -->
-
-    <h3>Feature Cards</h3>
-
-    <table border="1" width="100%" cellpadding="25">
-
-        <tr>
-
-            <td align="center">Attendance</td>
-
-            <td align="center">Assignments</td>
-
-            <td align="center">Study Materials</td>
-
-        </tr>
-
-        <tr>
-
-            <td align="center">Results</td>
-
-            <td align="center">Library</td>
-
-            <td align="center">Placement</td>
-
-        </tr>
-
-    </table>
-
-    <br>
+    <section class="hero">
+        <h1>Welcome to StudentHub Portal</h1>
+        <p>
+            A single platform where students can access academic
+            information, stay updated with campus activities,
+            and experience a smarter digital learning environment.
+        </p>
+        <button onclick="window.location.href='login.html'">Student Login</button>
+    </section>
+    <!-- ================= COLLEGE HIGHLIGHTS ================= -->
+    <h3>College Highlights</h3>
+    <div class="grid">
+        <div class="card center">
+            <h2>25+</h2>
+            <p>Years of Excellence</p>
+        </div>
+        <div class="card center">
+            <h2>50+</h2>
+            <p>Professional Courses</p>
+        </div>
+        <div class="card center">
+            <h2>120+</h2>
+            <p>Expert Faculty</p>
+        </div>
+        <div class="card center">
+            <h2>98%</h2>
+            <p>Placement Rate</p>
+        </div>
+    </div>
 
     <!-- ================= ANNOUNCEMENTS ================= -->
-
     <h3>Latest Announcements</h3>
-
-    <table border="1" width="100%" cellpadding="12">
-
-        <tr>
-            <td>Semester Examination starts from 20th August.</td>
-        </tr>
-
-        <tr>
-            <td>Assignment Submission Deadline: 15th August.</td>
-        </tr>
-
-        <tr>
-            <td>New Study Materials have been uploaded.</td>
-        </tr>
-
-    </table>
-
+    <div class="announcement">Semester Examination starts from 20th August.</div>
+    <div class="announcement">Assignment Submission Deadline: 15th August.</div>
+    <div class="announcement">New Study Materials have been uploaded.</div>
     <br>
-
     <!-- ================= UPCOMING EVENTS ================= -->
-
     <h3>Upcoming Events</h3>
-
-    <table border="1" width="100%" cellpadding="12">
-
-        <tr>
-            <td>National Level Hackathon 2026</td>
-        </tr>
-
-        <tr>
-            <td>Campus Placement Drive</td>
-        </tr>
-
-        <tr>
-            <td>Technical Workshop on Web Development</td>
-        </tr>
-
-    </table>
-
+    <div class="event">National Level Hackathon 2026</div>
+    <div class="event">Campus Placement Drive</div>
+    <div class="event">Technical Workshop on Web Development</div>
     <br>
-
+    <!-- ================= WHY CHOOSE US ================= -->
+    <h3>Why Choose StudentHub?</h3>
+    <div class="features">
+        <div class="feature-card">
+            <h3>Quality Education</h3>
+            <p>Learn from experienced faculty members.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Modern Campus</h3>
+            <p>Digital classrooms and advanced laboratories.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Career Support</h3>
+            <p>Excellent placement opportunities for students.</p>
+        </div>
+    </div>
     <!-- ================= FOOTER ================= -->
+<table border="1" width="100%" cellpadding="15">
+    <tr>
+        <!-- Quick Links: Aligned to Bottom Left -->
+        <td width="50%" align="left" valign="bottom">
+            <h3>Quick Links</h3>
+            <a href="about.html">About Us</a> |
+            <a href="contact.html">Contact</a>
+        </td>
+        <!-- Contact Information: Aligned to Top/Right -->
+        <td width="50%" align="left" valign="top">
 
-    <table border="1" width="100%" cellpadding="10">
+            <h3>Contact Information</h3>
 
-        <tr>
+            📍 XYZ College<br>
+            Ahmedabad, Gujarat - 380001<br>
+            📞 +91 98743XXXXX<br>
+            ✉ studenthub@gmail.com<br>
+            🕒 Monday - Friday (9:00 AM - 5:00 PM)
 
-            <td width="50%">
+        </td>
 
-                <h3>Quick Links</h3>
+    </tr>
 
-                <a href="home.html">Home</a> |
+    <tr>
 
-                <a href="about.html">About</a> |
+        <td colspan="2" align="center">
 
-                <a href="contact.html">Contact</a>
+            © 2026 StudentHub Portal | All Rights Reserved
 
-            </td>
+        </td>
 
-            <td align="right">
+    </tr>
 
-                <h3>Contact Info</h3>
-
-                Address: XYZ College, Ahmedabad
-
-                Phone: +91 9876543210
-
-                Email: studenthub@gmail.com
-
-            </td>
-
-        </tr>
-
-    </table>
+</table>
 
 </body>
-
 </html>
