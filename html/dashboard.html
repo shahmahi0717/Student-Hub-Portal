@@ -54,28 +54,29 @@
         <!-- ============== TOP BAR ============== -->
         <div class="topbar">
 
-            <div style="display:flex; align-items:center; gap:15px;">
+    <div style="display:flex; align-items:center; gap:15px;">
 
-                <!-- Sidebar toggle button -->
-                <button id="sidebarToggle" class="toggle-btn" aria-label="Toggle sidebar">
-                    &#9776;
-                </button>
+        <button id="sidebarToggle" class="toggle-btn" aria-label="Toggle sidebar">
+            &#9776;
+        </button>
 
-                <div>
-                    <h1>Good Morning, Student!</h1>
-                    <p>Here's what's happening with your academic journey today.</p>
-                </div>
-
-            </div>
-
-            <div style="display:flex; align-items:right; gap:20px;">
-
-
-                <a href="notifications.html">🔔 Notifications</a>
-
-            </div>
-
+        <div>
+            <h1>Good Morning, Student!</h1>
+            <p>Here's what's happening with your academic journey today.</p>
         </div>
+
+    </div>
+
+    <!-- Dark Mode Button -->
+    <button id="darkModeToggle" class="dark-mode-btn">
+        🌙 Dark Mode
+    </button>
+
+    <div style="display:flex; align-items:center; gap:20px;">
+        <a href="notifications.html">🔔 Notifications</a>
+    </div>
+
+</div>
 
         <!-- ============== STATISTICS CARDS ============== -->
         <div class="dashboard-grid">
@@ -200,16 +201,8 @@
 
 </div>
 
-<script>
-    const sidebar = document.getElementById('sidebar');
-    const mainContent = document.getElementById('mainContent');
-    const toggleBtn = document.getElementById('sidebarToggle');
 
-    toggleBtn.addEventListener('click', () => {
-        sidebar.classList.toggle('collapsed');
-        mainContent.classList.toggle('expanded');
-    });
-</script>
+<script src="C:\Users\shahm\OneDrive\Desktop\Student Hub Portal\JavaScript\script.js"></script>
 
 </body>
 
