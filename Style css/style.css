@@ -1912,3 +1912,303 @@ html, body {
 .header-nav button:hover {
     background-color: #002B56;
 }
+
+/*---------Dark Mode---------*/
+body.dark-mode {
+    background-color: #0F1B2D;
+    color: #F1F6FC;
+}
+
+
+/* =========================================================
+   TOPBAR
+   ========================================================= */
+
+body.dark-mode .topbar {
+    background-color: #13243A;
+    color: #F1F6FC;
+    border-color: #263D59;
+}
+
+body.dark-mode .topbar h1 {
+    color: #4DB8FF;
+}
+
+body.dark-mode .topbar p {
+    color: #B8C7D9;
+}
+
+body.dark-mode .topbar a {
+    color: #4DB8FF;
+}
+
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+body.dark-mode .sidebar {
+    background-color: #13243A;
+    color: #F1F6FC;
+    border-color: #263D59;
+}
+
+body.dark-mode .sidebar-header h2 {
+    color: #4DB8FF;
+}
+
+body.dark-mode .sidebar-links a {
+    color: #D5E2F0;
+}
+
+body.dark-mode .sidebar-links a:hover {
+    background-color: #1E3A5F;
+    color: #4DB8FF;
+}
+
+body.dark-mode .sidebar-links a.active {
+    background-color: #176FA6;
+    color: #FFFFFF;
+}
+
+body.dark-mode .sidebar-footer a {
+    color: #D5E2F0;
+}
+
+body.dark-mode .sidebar-footer a:hover {
+    color: #4DB8FF;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
+
+body.dark-mode .main-content {
+    background-color: #0F1B2D;
+    color: #F1F6FC;
+}
+
+
+/* =========================================================
+   DASHBOARD CARDS
+   ========================================================= */
+
+body.dark-mode .dashboard-card {
+    background-color: #172A46;
+    color: #F1F6FC;
+    border-color: #294463;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.20);
+}
+
+body.dark-mode .dashboard-card h2 {
+    color: #4DB8FF;
+}
+
+body.dark-mode .dashboard-card h3 {
+    color: #F1F6FC;
+}
+
+body.dark-mode .dashboard-card p {
+    color: #B8C7D9;
+}
+
+body.dark-mode .dashboard-card a {
+    color: inherit;
+}
+
+
+/* =========================================================
+   NORMAL CARDS
+   ========================================================= */
+
+body.dark-mode .card {
+    background-color: #172A46;
+    color: #F1F6FC;
+    border-color: #294463;
+}
+
+body.dark-mode .card h2,
+body.dark-mode .card h3 {
+    color: #4DB8FF;
+}
+
+body.dark-mode .card p {
+    color: #B8C7D9;
+}
+
+
+/* =========================================================
+   ITEM / COURSE / BOOK CARDS
+   ========================================================= */
+
+body.dark-mode .item-card,
+body.dark-mode .course-card,
+body.dark-mode .book-card,
+body.dark-mode .material-card,
+body.dark-mode .assignment-card {
+    background-color: #172A46;
+    color: #F1F6FC;
+    border-color: #294463;
+}
+
+body.dark-mode .item-card h3,
+body.dark-mode .course-card h3,
+body.dark-mode .book-card h3,
+body.dark-mode .material-card h3 {
+    color: #4DB8FF;
+}
+
+body.dark-mode .item-card p,
+body.dark-mode .course-card p,
+body.dark-mode .book-card p,
+body.dark-mode .material-card p {
+    color: #B8C7D9;
+}
+
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+body.dark-mode table {
+    background-color: #172A46;
+    color: #F1F6FC;
+}
+
+body.dark-mode th {
+    background-color: #155A88;
+    color: #FFFFFF;
+}
+
+body.dark-mode td {
+    color: #D5E2F0;
+    border-color: #294463;
+}
+
+body.dark-mode tr:nth-child(even) {
+    background-color: #1B3150;
+}
+
+body.dark-mode tr:hover {
+    background-color: #23466D;
+}
+
+
+/* =========================================================
+   INPUTS
+   ========================================================= */
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+    background-color: #172A46;
+    color: #F1F6FC;
+    border-color: #3B5875;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #8FA5BC;
+}
+
+body.dark-mode label {
+    color: #D5E2F0;
+}
+
+
+/* =========================================================
+   SIDEBAR TOGGLE
+   ========================================================= */
+
+body.dark-mode .toggle-btn {
+    background-color: #172A46;
+    color: #4DB8FF;
+    border-color: #3B5875;
+}
+
+body.dark-mode .toggle-btn:hover {
+    background-color: #1E3A5F;
+}
+
+
+/* =========================================================
+   SEARCH
+   ========================================================= */
+
+body.dark-mode .search-bar input {
+    background-color: #172A46;
+    color: #F1F6FC;
+    border-color: #3B5875;
+}
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+body.dark-mode a {
+    color: #4DB8FF;
+}
+
+body.dark-mode a:hover {
+    color: #8DD3FF;
+}
+
+
+/* =========================================================
+   DARK MODE BUTTON
+   ========================================================= */
+
+.dark-mode-btn {
+    background-color: #176FA6;
+    color: #FFFFFF;
+
+    border: none;
+    padding: 10px 18px;
+
+    border-radius: 25px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+    transition: all 0.3s ease;
+}
+
+.dark-mode-btn:hover {
+    background-color: #218BC9;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+body.dark-mode footer,
+body.dark-mode .footer {
+    background-color: #13243A;
+    color: #D5E2F0;
+    border-color: #263D59;
+}
+
+
+/* =========================================================
+   SMOOTH TRANSITION
+   ========================================================= */
+
+body,
+body *,
+body *::before,
+body *::after {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
