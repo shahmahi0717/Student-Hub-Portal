@@ -1,11 +1,4 @@
-/* =========================================================
-   STUDENT HUB PORTAL
-   COMMON JAVASCRIPT
-   ========================================================= */
-
 document.addEventListener("DOMContentLoaded", function () {
-
-
     /* =====================================================
        CURRENT PAGE
        ===================================================== */
@@ -21,10 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
        DARK MODE
        ===================================================== */
 
-    /*
-       These pages MUST stay in light mode.
-    */
-
     const lightModePages = [
         "home.html",
         "contact.html",
@@ -36,19 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "forgotpassword.html"
     ];
 
-
-    /*
-       Check if current page can use dark mode.
-    */
-
     const darkModeAllowed =
         !lightModePages.includes(currentPage);
-
-
-    /*
-       Get Dark Mode button.
-       The button exists ONLY on dashboard.
-    */
 
     const darkModeButton =
         document.getElementById("darkModeToggle");
@@ -56,17 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (darkModeAllowed) {
 
-        /*
-           Get saved theme.
-        */
-
         const savedTheme =
             localStorage.getItem("studentHubTheme");
-
-
-        /*
-           Apply saved dark mode.
-        */
 
         if (savedTheme === "dark") {
 
@@ -74,17 +43,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         }
 
-
-        /*
-           Update button text.
-        */
-
         updateDarkModeButton();
 
 
-        /*
-           Dark Mode button click.
-        */
+        
 
         if (darkModeButton) {
 
@@ -97,10 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     );
 
 
-                    /*
-                       Save theme.
-                    */
-
+                   
                     if (
                         document.body.classList.contains(
                             "dark-mode"
@@ -132,10 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    /*
-       Change Dark Mode button text.
-    */
-
+   
     function updateDarkModeButton() {
 
         if (!darkModeButton) {
