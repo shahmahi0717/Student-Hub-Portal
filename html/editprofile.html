@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Profile - Student Hub Portal</title>
-    <link rel="stylesheet" href="C:\Users\shahm\OneDrive\Desktop\Student Hub Portal\Style css\style.css">
+    <link rel="stylesheet" href="../Style css/style.css">
 </head>
 
 <body>
@@ -114,17 +114,30 @@
 
                     <div class="form-field">
                         <label for="name">Name</label>
-                        <input type="text" id="name" name="name" value="Student Name">
+                        <input
+    type="text"
+    id="editName"
+    name="name"
+>
                     </div>
 
                     <div class="form-field">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" value="student@example.com">
+                        <input
+    type="email"
+    id="editEmail"
+    name="email"
+    readonly
+>
                     </div>
 
                     <div class="form-field">
                         <label for="mobile">Mobile</label>
-                        <input type="tel" id="mobile" name="mobile" value="9876543210">
+                       <input
+    type="text"
+    id="editMobile"
+    name="mobile"
+>
                     </div>
 
                     <div class="form-field">
@@ -148,17 +161,29 @@
 
                     <div class="form-field">
                         <label for="enrollment">Enrollment Number</label>
-                        <input type="text" id="enrollment" name="enrollment" value="20260001">
+                        <input
+    type="text"
+    id="editEnrollment"
+    name="enrollment"
+>
                     </div>
 
                     <div class="form-field">
                         <label for="department">Department</label>
-                        <input type="text" id="department" name="department" value="Computer Science">
+                       <input
+    type="text"
+    id="editCourse"
+    name="course"
+>
                     </div>
 
                     <div class="form-field">
                         <label for="semester">Semester</label>
-                        <input type="text" id="semester" name="semester" value="Semester 4">
+                        <input
+    type="text"
+    id="editSemester"
+    name="semester"
+>
                     </div>
 
                     <div class="form-field">
@@ -189,8 +214,250 @@
 </div>
 
 
-<script src="C:\Users\shahm\OneDrive\Desktop\Student Hub Portal\JavaScript\script.js"></script>
+<script src="../JavaScript/script.js"></script>
+<script src="../JavaScript/studentData.js"></script>
 
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    async function () {
+
+        /*
+        ==========================================
+        MAKE SURE STUDENT DATA IS LOADED
+        ==========================================
+        */
+
+        await initializeStudentData();
+
+
+        /*
+        ==========================================
+        GET CURRENT LOGGED-IN STUDENT
+        ==========================================
+        */
+
+        const student = getCurrentStudent();
+
+
+        /*
+        ==========================================
+        IF NO STUDENT IS LOGGED IN
+        ==========================================
+        */
+
+        if (!student) {
+
+            alert("Please login first.");
+
+            window.location.href =
+                "login.html";
+
+            return;
+        }
+
+
+        /*
+        ==========================================
+        FETCH STUDENT DATA INTO FORM
+        ==========================================
+        */
+
+        const nameInput =
+            document.getElementById("editName");
+
+        const emailInput =
+            document.getElementById("editEmail");
+
+        const mobileInput =
+            document.getElementById("editMobile");
+
+        const courseInput =
+            document.getElementById("editCourse");
+
+        const semesterInput =
+            document.getElementById("editSemester");
+
+        const enrollmentInput =
+            document.getElementById("editEnrollment");
+
+        const cityInput =
+            document.getElementById("editCity");
+
+        const genderInput =
+            document.getElementById("editGender");
+
+
+        /*
+        ==========================================
+        PUT DATA INTO INPUT BOXES
+        ==========================================
+        */
+
+        if (nameInput) {
+            nameInput.value =
+                student.name || "";
+        }
+
+
+        if (emailInput) {
+            emailInput.value =
+                student.email || "";
+        }
+
+
+        if (mobileInput) {
+            mobileInput.value =
+                student.mobile || "";
+        }
+
+
+        if (courseInput) {
+            courseInput.value =
+                student.course || "";
+        }
+
+
+        if (semesterInput) {
+            semesterInput.value =
+                student.semester || "";
+        }
+
+
+        if (enrollmentInput) {
+            enrollmentInput.value =
+                student.enrollment || "";
+        }
+
+
+        if (cityInput) {
+            cityInput.value =
+                student.city || "";
+        }
+
+
+        if (genderInput) {
+            genderInput.value =
+                student.gender || "";
+        }
+
+
+        /*
+        ==========================================
+        SAVE UPDATED PROFILE
+        ==========================================
+        */
+
+        const editProfileForm =
+            document.getElementById(
+                "editProfileForm"
+            );
+
+
+        if (!editProfileForm) {
+            return;
+        }
+
+
+        editProfileForm.addEventListener(
+            "submit",
+            function (event) {
+
+                event.preventDefault();
+
+
+                /*
+                Collect updated values
+                */
+
+                const updatedStudent = {
+
+                    name:
+                        nameInput
+                            ? nameInput.value.trim()
+                            : student.name,
+
+                    email:
+                        emailInput
+                            ? emailInput.value.trim()
+                            : student.email,
+
+                    mobile:
+                        mobileInput
+                            ? mobileInput.value.trim()
+                            : student.mobile,
+
+                    course:
+                        courseInput
+                            ? courseInput.value.trim()
+                            : student.course,
+
+                    semester:
+                        semesterInput
+                            ? semesterInput.value.trim()
+                            : student.semester,
+
+                    enrollment:
+                        enrollmentInput
+                            ? enrollmentInput.value.trim()
+                            : student.enrollment,
+
+                    city:
+                        cityInput
+                            ? cityInput.value.trim()
+                            : student.city,
+
+                    gender:
+                        genderInput
+                            ? genderInput.value
+                            : student.gender
+
+                };
+
+
+                /*
+                ==================================
+                SAVE TO LOCAL STORAGE
+                ==================================
+                */
+
+                const updated =
+                    updateStudent(
+                        updatedStudent
+                    );
+
+
+                if (updated) {
+
+                    alert(
+                        "Profile updated successfully!"
+                    );
+
+
+                    /*
+                    Go back to profile
+                    */
+
+                    window.location.href =
+                        "profile.html";
+
+                } else {
+
+                    alert(
+                        "Unable to update profile."
+                    );
+
+                }
+
+            }
+        );
+
+    }
+
+);
+
+</script>
 </body>
 
 </html>

@@ -1,0 +1,47 @@
+[
+    {
+        "id": "C001",
+        "code": "CE601",
+        "name": "Data Structures",
+        "faculty": "Prof. Patel",
+        "semester": "6",
+        "credits": 4,
+        "description": "Study of arrays, linked lists, stacks, queues, trees, graphs and searching techniques."
+    },
+    {
+        "id": "C002",
+        "code": "CE602",
+        "name": "Web Development",
+        "faculty": "Prof. Shah",
+        "semester": "6",
+        "credits": 3,
+        "description": "Development of modern web applications using HTML, CSS, JavaScript, JSON and Fetch API."
+    },
+    {
+        "id": "C003",
+        "code": "CE603",
+        "name": "Database Management System",
+        "faculty": "Prof. Mehta",
+        "semester": "6",
+        "credits": 4,
+        "description": "Database design, SQL queries, normalization, transactions and database management."
+    },
+    {
+        "id": "C004",
+        "code": "CE604",
+        "name": "Computer Networks",
+        "faculty": "Prof. Desai",
+        "semester": "6",
+        "credits": 3,
+        "description": "Networking concepts, OSI model, TCP/IP, network protocols and communication systems."
+    },
+    {
+        "id": "C005",
+        "code": "CE605",
+        "name": "Software Engineering",
+        "faculty": "Prof. Joshi",
+        "semester": "6",
+        "credits": 3,
+        "description": "Software development life cycle, software models, testing and project management."
+    }
+]

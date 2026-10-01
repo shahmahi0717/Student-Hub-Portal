@@ -1,0 +1,42 @@
+[
+    {
+        "id": "SM001",
+        "title": "Data Structures Complete Notes",
+        "subject": "Data Structures",
+        "semester": "6",
+        "type": "PDF",
+        "description": "Complete study material covering arrays, linked lists, stacks, queues, trees, graphs and sorting algorithms."
+    },
+    {
+        "id": "SM002",
+        "title": "JavaScript and Fetch API",
+        "subject": "Web Development",
+        "semester": "6",
+        "type": "Notes",
+        "description": "Study material covering JavaScript, JSON, Fetch API, promises, asynchronous programming and dynamic rendering."
+    },
+    {
+        "id": "SM003",
+        "title": "Database Management System Notes",
+        "subject": "DBMS",
+        "semester": "6",
+        "type": "PDF",
+        "description": "Notes covering database concepts, ER diagrams, SQL, normalization, transactions and database security."
+    },
+    {
+        "id": "SM004",
+        "title": "Computer Networks Study Material",
+        "subject": "Computer Networks",
+        "semester": "6",
+        "type": "PDF",
+        "description": "Study material covering OSI model, TCP/IP, network devices, protocols and network security."
+    },
+    {
+        "id": "SM005",
+        "title": "Software Engineering Notes",
+        "subject": "Software Engineering",
+        "semester": "6",
+        "type": "Notes",
+        "description": "Material covering SDLC models, software requirements, design, testing and project management."
+    }
+]

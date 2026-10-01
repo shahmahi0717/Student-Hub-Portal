@@ -3,7 +3,7 @@
 
 <head>
     <title>Registration - StudentHub Portal</title>
-    <link rel="stylesheet" href="C:\Users\shahm\OneDrive\Desktop\Student Hub Portal\Style css\style.css">
+    <link rel="stylesheet" href="../Style css/style.css">
 </head>
 
 <body>
@@ -83,8 +83,110 @@
     </table>
 
     <!-- External JavaScript -->
-    <script src="C:\Users\shahm\OneDrive\Desktop\Student Hub Portal\JavaScript\script.js"></script>
+    <script src="../JavaScript/script.js"></script>
+    <script src="../JavaScript/studentData.js"></script>
 
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    async function() {
+
+        await initializeStudentData();
+
+
+        const registrationForm =
+            document.getElementById(
+                "registrationForm"
+            );
+
+
+        if (!registrationForm) {
+            return;
+        }
+
+
+        registrationForm.addEventListener(
+            "submit",
+            function(event) {
+
+                event.preventDefault();
+
+
+                const student = {
+
+                    name:
+                        document
+                            .getElementById("name")
+                            .value
+                            .trim(),
+
+                    email:
+                        document
+                            .getElementById("email")
+                            .value
+                            .trim(),
+
+                    password:
+                        document
+                            .getElementById("password")
+                            .value,
+
+                    mobile:
+                        document
+                            .getElementById("mobile")
+                            .value
+                            .trim(),
+
+                    course:
+                        document
+                            .getElementById("department")
+                            .value
+                            .trim(),
+
+                    semester:
+                        document
+                            .getElementById("semester")
+                            .value
+                            .trim(),
+
+                    enrollment:
+                        document
+                            .getElementById("enrollment")
+                            .value
+                            .trim()
+
+                };
+
+
+                const result =
+                    registerStudent(student);
+
+
+                if (result.success) {
+
+                    alert(
+                        "Registration successful!"
+                    );
+
+                    window.location.href =
+                        "login.html";
+
+                } else {
+
+                    alert(
+                        result.message
+                    );
+
+                }
+
+            }
+        );
+
+    }
+);
+
+</script>
 </body>
 
 </html>

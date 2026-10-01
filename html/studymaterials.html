@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Materials - Student Hub Portal</title>
-    <link rel="stylesheet" href="C:\Users\shahm\OneDrive\Desktop\Student Hub Portal\Style css\style.css">
+        <link rel="stylesheet" href="../Style css/style.css">
+
 </head>
 
 <body>
@@ -60,40 +61,19 @@
         <br>
 
         <!-- ============== MATERIAL CARDS ============== -->
-        <div class="item-grid">
-
-            <div class="item-card">
-                <span class="item-tag">PDF</span>
-                <h3>Title placeholder</h3>
-                <a href="pdffile.pdf" download><button type="button">Download</button></a>
-            </div>
-
-            <div class="item-card">
-                <span class="item-tag">PPT</span>
-                <h3>Title placeholder</h3>
-                <a href="presentation.pptx"><button type="button" class="btn-secondary">View</button></a>
-            </div>
-
-            <div class="item-card">
-                <span class="item-tag">Notes</span>
-                <h3>Title placeholder</h3>
-                <a href="notes.pdf" download><button type="button">Download</button></a>
-            </div>
-
-            <div class="item-card">
-                <span class="item-tag">Video</span>
-                <h3>Title placeholder</h3>
-                <a href="video.html"><button type="button" class="btn-secondary">View</button></a>
-            </div>
-
-        </div>
+        <div
+    id="studymaterialsContainer"
+    class="item-grid"
+    data-json="studyMaterials"
+    data-view="cards">
+</div>
 
     </main>
 
 </div>
 
 
-<script src="C:\Users\shahm\OneDrive\Desktop\Student Hub Portal\JavaScript\script.js"></script>
+<script src="../JavaScript/script.js"></script>
 
 </body>
 

@@ -1,0 +1,42 @@
+[
+    {
+        "id": "N001",
+        "title": "Mid-Semester Examination Schedule",
+        "date": "2026-10-10",
+        "category": "Examination",
+        "priority": "Important",
+        "description": "The mid-semester examination schedule has been released. Students are advised to check the examination timetable."
+    },
+    {
+        "id": "N002",
+        "title": "Scholarship Application Deadline",
+        "date": "2026-10-15",
+        "category": "Scholarship",
+        "priority": "Important",
+        "description": "Eligible students are requested to submit their scholarship applications before the deadline."
+    },
+    {
+        "id": "N003",
+        "title": "Library Timing Updated",
+        "date": "2026-10-01",
+        "category": "Library",
+        "priority": "Normal",
+        "description": "The central library will remain open until 8:00 PM on weekdays."
+    },
+    {
+        "id": "N004",
+        "title": "Hackathon Registration Open",
+        "date": "2026-10-05",
+        "category": "Event",
+        "priority": "Normal",
+        "description": "Students interested in participating in the university hackathon can register through the student portal."
+    },
+    {
+        "id": "N005",
+        "title": "Semester Registration",
+        "date": "2026-10-20",
+        "category": "Academic",
+        "priority": "Important",
+        "description": "Semester registration for the upcoming academic term will begin from October 20."
+    }
+]

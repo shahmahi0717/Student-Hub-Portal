@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Results - Student Hub Portal</title>
-    <link rel="stylesheet" href="C:\Users\shahm\OneDrive\Desktop\Student Hub Portal\Style css\style.css">
+        <link rel="stylesheet" href="../Style css/style.css">
+
 </head>
 
 <body>
@@ -70,30 +71,11 @@
         <br>
 
         <!-- ============== RESULTS TABLE ============== -->
-        <div class="card">
-
-            <table class="styled-table" width="100%">
-                <tr>
-                    <th>Subject</th>
-                    <th>Marks</th>
-                    <th>Grade</th>
-                    <th>Credits</th>
-                </tr>
-                <tr>
-                    <td>Subject 1</td>
-                    <td>85</td>
-                    <td>A</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <td>Subject 2</td>
-                    <td>72</td>
-                    <td>B+</td>
-                    <td>3</td>
-                </tr>
-            </table>
-
-        </div>
+        <div
+    id="resultsContainer"
+    data-json="results"
+    data-view="table">
+</div>
 
         <br>
 
@@ -123,8 +105,14 @@
 
 </div>
 
-<script src="C:\Users\shahm\OneDrive\Desktop\Student Hub Portal\JavaScript\script.js"></script>
+<script src="../JavaScript/script.js"></script>
+<script>    
+    const student = getCurrentStudent();
 
+const studentResults = results.filter(
+    result => result.studentId === student.id
+);
+</script>
 
 </body>
 

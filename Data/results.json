@@ -1,0 +1,66 @@
+[
+    {
+        "id": "R001",
+        "studentId": "STU001",
+        "semester": "5",
+        "subject": "Data Structures",
+        "marks": 86,
+        "grade": "A"
+    },
+    {
+        "id": "R002",
+        "studentId": "STU001",
+        "semester": "5",
+        "subject": "Database Management System",
+        "marks": 91,
+        "grade": "A+"
+    },
+    {
+        "id": "R003",
+        "studentId": "STU001",
+        "semester": "5",
+        "subject": "Web Development",
+        "marks": 88,
+        "grade": "A"
+    },
+    {
+        "id": "R004",
+        "studentId": "STU001",
+        "semester": "5",
+        "subject": "Computer Networks",
+        "marks": 82,
+        "grade": "A"
+    },
+    {
+        "id": "R005",
+        "studentId": "STU002",
+        "semester": "5",
+        "subject": "Data Structures",
+        "marks": 78,
+        "grade": "B+"
+    },
+    {
+        "id": "R006",
+        "studentId": "STU002",
+        "semester": "5",
+        "subject": "Database Management System",
+        "marks": 84,
+        "grade": "A"
+    },
+    {
+        "id": "R007",
+        "studentId": "STU003",
+        "semester": "4",
+        "subject": "Web Development",
+        "marks": 90,
+        "grade": "A+"
+    },
+    {
+        "id": "R008",
+        "studentId": "STU004",
+        "semester": "3",
+        "subject": "Computer Networks",
+        "marks": 76,
+        "grade": "B+"
+    }
+]

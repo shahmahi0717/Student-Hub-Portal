@@ -3,7 +3,7 @@
 
 <head>
     <title>Login - StudentHub Portal</title>
-    <link rel="stylesheet" href="C:\Users\shahm\OneDrive\Desktop\Student Hub Portal\Style css\style.css">
+    <link rel="stylesheet" href="../Style css/style.css">
 </head>
 
 <body>
@@ -24,13 +24,18 @@
 
                         <td>
 
-                            <form>
+                            <form id="loginForm">
 
                                 <label>Email Address</label>
 
                                 <br>
 
-                                <input type="email" size="45">
+                                <input
+    type="email"
+    id="loginEmail"
+    size="45"
+    required
+>
 
                                 <br>
 
@@ -38,7 +43,12 @@
 
                                 <br>
 
-                                <input type="password" size="45">
+                               <input
+    type="password"
+    id="loginPassword"
+    size="45"
+    required
+>
 
                                 <br>
 
@@ -87,7 +97,89 @@
         </tr>
 
     </table>
-<script src="C:\Users\shahm\OneDrive\Desktop\Student Hub Portal\JavaScript\script.js"></script>
+<script src="../JavaScript/script.js"></script>
+<script src="../JavaScript/studentData.js"></script>
+
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    async function() {
+
+        /*
+           Make sure students.json
+           has been loaded.
+        */
+
+        await initializeStudentData();
+
+
+        const loginForm =
+            document.getElementById(
+                "loginForm"
+            );
+
+
+        if (!loginForm) {
+            return;
+        }
+
+
+        loginForm.addEventListener(
+            "submit",
+            function(event) {
+
+                event.preventDefault();
+
+
+                const email =
+                    document
+                        .getElementById(
+                            "loginEmail"
+                        )
+                        .value
+                        .trim();
+
+
+                const password =
+                    document
+                        .getElementById(
+                            "loginPassword"
+                        )
+                        .value;
+
+
+                const result =
+                    loginStudent(
+                        email,
+                        password
+                    );
+
+
+                if (result.success) {
+
+                    alert(
+                        "Login successful!"
+                    );
+
+                    window.location.href =
+                        "dashboard.html";
+
+                } else {
+
+                    alert(
+                        result.message
+                    );
+
+                }
+
+            }
+        );
+
+    }
+);
+
+</script>
 
 </body>
 

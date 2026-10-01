@@ -1,0 +1,50 @@
+[
+    {
+        "id": "STU001",
+        "name": "Mahi Shah",
+        "email": "mahi@example.com",
+        "password": "Mahi@123",
+        "mobile": "9876543210",
+        "course": "Computer Engineering",
+        "semester": "6",
+        "enrollment": "CE2023001",
+        "division": "A",
+        "city": "Anand"
+    },
+    {
+        "id": "STU002",
+        "name": "Rahul Patel",
+        "email": "rahul@example.com",
+        "password": "Rahul@123",
+        "mobile": "9876543211",
+        "course": "Computer Engineering",
+        "semester": "6",
+        "enrollment": "CE2023002",
+        "division": "A",
+        "city": "Ahmedabad"
+    },
+    {
+        "id": "STU003",
+        "name": "Priya Shah",
+        "email": "priya@example.com",
+        "password": "Priya@123",
+        "mobile": "9876543212",
+        "course": "Information Technology",
+        "semester": "5",
+        "enrollment": "IT2023003",
+        "division": "B",
+        "city": "Vadodara"
+    },
+    {
+        "id": "STU004",
+        "name": "Aarav Patel",
+        "email": "aarav@example.com",
+        "password": "Aarav@123",
+        "mobile": "9876543213",
+        "course": "Computer Science",
+        "semester": "4",
+        "enrollment": "CS2023004",
+        "division": "A",
+        "city": "Surat"
+    }
+]

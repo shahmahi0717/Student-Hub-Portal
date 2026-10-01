@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignments - Student Hub Portal</title>
-    <link rel="stylesheet" href="C:\Users\shahm\OneDrive\Desktop\Student Hub Portal\Style css\style.css">
+    <link rel="stylesheet" href="../Style css/style.css">
 </head>
 
 <body>
@@ -49,43 +49,17 @@
             </div>
         </div>
 
-        <!-- ============== ASSIGNMENTS TABLE ============== -->
-        <div class="card">
-
-            <table class="styled-table" width="100%">
-                <tr>
-                    <th>Subject</th>
-                    <th>Title</th>
-                    <th>Due Date</th>
-                    <th>Status</th>
-                    <th>Action</th>
-                </tr>
-
-                <tr>
-                    <td>Sub 1</td>
-                    <td>Assignment 1</td>
-                    <td>20/07/2026</td>
-                    <td><span class="status-badge status-pending">Pending</span></td>
-                    <td><a href="upload-assignment.html"><button type="button">Upload</button></a></td>
-                </tr>
-
-                <tr>
-                    <td>Sub 2</td>
-                    <td>Assignment 2</td>
-                    <td>25/07/2026</td>
-                    <td><span class="status-badge status-available">Submitted</span></td>
-                    <td><a href="view-assignment.html"><button type="button" class="btn-secondary">View</button></a></td>
-                </tr>
-            </table>
-
-        </div>
-
+        <div
+    id="assignmentsContainer"
+    data-json="assignments"
+    data-view="table">
+</div>
     </main>
 
 </div>
 
 
-<script src="C:\Users\shahm\OneDrive\Desktop\Student Hub Portal\JavaScript\script.js"></script>
+<script src="../JavaScript/script.js"></script>
 
 </body>
 

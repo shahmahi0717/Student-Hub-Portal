@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Placement - Student Hub Portal</title>
-    <link rel="stylesheet" href="C:\Users\shahm\OneDrive\Desktop\Student Hub Portal\Style css\style.css">
+        <link rel="stylesheet" href="../Style css/style.css">
+
 </head>
 
 <body>
@@ -49,67 +50,18 @@
             </div>
         </div>
 
-        <!-- ============== COMPANY CARDS ============== -->
-        <div class="card">
-
-            <h2>Company Cards</h2>
-            <br>
-
-            <div class="item-grid item-grid-2">
-
-                <div class="item-card">
-                    <h3>Company Name</h3>
-                    <p class="item-meta">Role: ______</p>
-                    <p class="item-meta">Eligibility: ______</p>
-                    <a href="apply.html"><button type="button">Apply</button></a>
-                </div>
-
-                <div class="item-card">
-                    <h3>Company Name</h3>
-                    <p class="item-meta">Role: ______</p>
-                    <p class="item-meta">Eligibility: ______</p>
-                    <a href="apply.html"><button type="button">Apply</button></a>
-                </div>
-
-            </div>
-
-        </div>
-
-        <br>
-
-        <!-- ============== UPCOMING DRIVES ============== -->
-        <div class="card">
-
-            <h2>Upcoming Drives</h2>
-            <br>
-
-            <p>Upcoming placement drive details will be displayed here.</p>
-            <br>
-            <a href="drivedetails.html"><button type="button" class="btn-secondary">View Details</button></a>
-
-        </div>
-
-        <br>
-
-        <!-- ============== INTERNSHIP OPPORTUNITIES ============== -->
-        <div class="card">
-
-            <h2>Internship Opportunities</h2>
-            <br>
-
-            <p>Internship opportunity details will be displayed here.</p>
-            <br>
-            <a href="internshipdetails.html"><button type="button" class="btn-secondary">View Details</button></a>
-
-        </div>
-
+        <div
+    id="placementsContainer"
+    class="item-grid"
+    data-json="placements"
+    data-view="cards">
+</div>
     </main>
 
 </div>
 
 
-<script src="C:\Users\shahm\OneDrive\Desktop\Student Hub Portal\JavaScript\script.js"></script>
-
+<script src="../JavaScript/script.js"></script>
 </body>
 
 </html>

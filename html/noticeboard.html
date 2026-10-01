@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notice Board - Student Hub Portal</title>
-    <link rel="stylesheet" href="C:\Users\shahm\OneDrive\Desktop\Student Hub Portal\Style css\style.css">
+        <link rel="stylesheet" href="../Style css/style.css">
+
 </head>
 
 <body>
@@ -49,45 +50,17 @@
             </div>
         </div>
 
-        <!-- ============== NOTICE 1 ============== -->
-        <div class="card notice-card">
-            <div class="notice-header">
-                <h3>Notice Title</h3>
-                <span class="notice-date">DD/MM/YYYY</span>
-            </div>
-            <p>This is a short description of the notice.</p>
-            <a href="noticedetails.html"><button type="button" class="btn-secondary">View Details</button></a>
-        </div>
-
-        <br>
-
-        <!-- ============== NOTICE 2 ============== -->
-        <div class="card notice-card">
-            <div class="notice-header">
-                <h3>Notice Title</h3>
-                <span class="notice-date">DD/MM/YYYY</span>
-            </div>
-            <p>This is a short description of the notice.</p>
-            <a href="noticedetails.html"><button type="button" class="btn-secondary">View Details</button></a>
-        </div>
-
-        <br>
-
-        <!-- ============== NOTICE 3 ============== -->
-        <div class="card notice-card">
-            <div class="notice-header">
-                <h3>Notice Title</h3>
-                <span class="notice-date">DD/MM/YYYY</span>
-            </div>
-            <p>This is a short description of the notice.</p>
-            <a href="noticedetails.html"><button type="button" class="btn-secondary">View Details</button></a>
-        </div>
-
+        <div
+    id="noticesContainer"
+    class="item-grid"
+    data-json="notices"
+    data-view="cards">
+</div>
     </main>
 
 </div>
 
-<script src="C:\Users\shahm\OneDrive\Desktop\Student Hub Portal\JavaScript\script.js"></script>
+<script src="../JavaScript/script.js"></script>
 
 </body>
 

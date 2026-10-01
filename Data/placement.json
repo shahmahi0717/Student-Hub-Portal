@@ -1,0 +1,47 @@
+[
+    {
+        "id": "P001",
+        "company": "TCS",
+        "jobRole": "Software Developer",
+        "location": "Ahmedabad",
+        "package": "6 LPA",
+        "eligibility": "CGPA 7.0 or above",
+        "lastDate": "2026-10-20"
+    },
+    {
+        "id": "P002",
+        "company": "Infosys",
+        "jobRole": "Systems Engineer",
+        "location": "Pune",
+        "package": "5.5 LPA",
+        "eligibility": "CGPA 6.5 or above",
+        "lastDate": "2026-10-25"
+    },
+    {
+        "id": "P003",
+        "company": "Wipro",
+        "jobRole": "Project Engineer",
+        "location": "Bangalore",
+        "package": "5 LPA",
+        "eligibility": "CGPA 6.5 or above",
+        "lastDate": "2026-10-30"
+    },
+    {
+        "id": "P004",
+        "company": "Accenture",
+        "jobRole": "Associate Software Engineer",
+        "location": "Mumbai",
+        "package": "6.2 LPA",
+        "eligibility": "CGPA 7.0 or above",
+        "lastDate": "2026-11-05"
+    },
+    {
+        "id": "P005",
+        "company": "Cognizant",
+        "jobRole": "Programmer Analyst",
+        "location": "Chennai",
+        "package": "5.8 LPA",
+        "eligibility": "CGPA 6.5 or above",
+        "lastDate": "2026-11-10"
+    }
+]

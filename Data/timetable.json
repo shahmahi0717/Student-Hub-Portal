@@ -1,0 +1,66 @@
+[
+    {
+        "id": "T001",
+        "day": "Monday",
+        "time": "09:00 AM - 10:00 AM",
+        "subject": "Data Structures",
+        "faculty": "Prof. Patel",
+        "room": "Lab 101"
+    },
+    {
+        "id": "T002",
+        "day": "Monday",
+        "time": "11:00 AM - 12:00 PM",
+        "subject": "Web Development",
+        "faculty": "Prof. Shah",
+        "room": "Lab 102"
+    },
+    {
+        "id": "T003",
+        "day": "Monday",
+        "time": "02:00 PM - 03:00 PM",
+        "subject": "Database Management System",
+        "faculty": "Prof. Mehta",
+        "room": "Room 201"
+    },
+    {
+        "id": "T004",
+        "day": "Tuesday",
+        "time": "09:00 AM - 10:00 AM",
+        "subject": "Computer Networks",
+        "faculty": "Prof. Desai",
+        "room": "Room 202"
+    },
+    {
+        "id": "T005",
+        "day": "Tuesday",
+        "time": "11:00 AM - 12:00 PM",
+        "subject": "Software Engineering",
+        "faculty": "Prof. Joshi",
+        "room": "Room 203"
+    },
+    {
+        "id": "T006",
+        "day": "Wednesday",
+        "time": "10:00 AM - 11:00 AM",
+        "subject": "Data Structures",
+        "faculty": "Prof. Patel",
+        "room": "Lab 101"
+    },
+    {
+        "id": "T007",
+        "day": "Thursday",
+        "time": "09:00 AM - 10:00 AM",
+        "subject": "Web Development",
+        "faculty": "Prof. Shah",
+        "room": "Lab 102"
+    },
+    {
+        "id": "T008",
+        "day": "Friday",
+        "time": "11:00 AM - 12:00 PM",
+        "subject": "Database Management System",
+        "faculty": "Prof. Mehta",
+        "room": "Room 201"
+    }
+]

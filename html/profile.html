@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Hub Portal - Profile</title>
-    <link rel="stylesheet" href="C:\Users\shahm\OneDrive\Desktop\Student Hub Portal\Style css\style.css">
+        <link rel="stylesheet" href="../Style css/style.css">
+
 </head>
 
 <body>
@@ -91,9 +92,19 @@
 
                 <!-- Name + quick tags -->
                 <div class="profile-header-text">
-                    <h2 class="profile-name">__________________</h2>
-                    <p class="profile-subtext">__________________ &nbsp;•&nbsp; Semester __________________</p>
-                </div>
+
+    <h2 class="profile-name" id="profileName">
+        __________________
+    </h2>
+
+    <p class="profile-subtext">
+        <span id="profileCourse">__________________</span>
+        &nbsp;•&nbsp;
+        Semester
+        <span id="profileSemester">__________________</span>
+    </p>
+
+</div>
 
                 <a href="editprofile.html" class="edit-profile-btn">
                     <button type="button">Edit Profile</button>
@@ -159,7 +170,9 @@
                     <span class="field-icon">👤</span>
                     <div>
                         <p class="field-label">Full Name</p>
-                        <p class="field-value">__________________</p>
+                        <p class="field-value" id="profileFullName">
+    __________________
+</p>
                     </div>
                 </div>
 
@@ -167,7 +180,9 @@
                     <span class="field-icon">✉️</span>
                     <div>
                         <p class="field-label">Email</p>
-                        <p class="field-value">__________________</p>
+                        <p class="field-value" id="profileEmail">
+    __________________
+</p>
                     </div>
                 </div>
 
@@ -175,7 +190,9 @@
                     <span class="field-icon">📱</span>
                     <div>
                         <p class="field-label">Mobile</p>
-                        <p class="field-value placeholder">Not added yet</p>
+                        <p class="field-value placeholder" id="profileMobile">
+    Not added yet
+</p>
                     </div>
                 </div>
 
@@ -183,7 +200,9 @@
                     <span class="field-icon">🏠</span>
                     <div>
                         <p class="field-label">Address</p>
-                        <p class="field-value placeholder">Not added yet</p>
+                        <p class="field-value placeholder" id="profileAddress">
+    Not added yet
+</p>
                     </div>
                 </div>
 
@@ -205,7 +224,9 @@
                     <span class="field-icon">🎓</span>
                     <div>
                         <p class="field-label">Enrollment Number</p>
-                        <p class="field-value">__________________</p>
+                       <p class="field-value" id="profileEnrollment">
+    __________________
+</p>
                     </div>
                 </div>
 
@@ -213,15 +234,19 @@
                     <span class="field-icon">🏫</span>
                     <div>
                         <p class="field-label">Department</p>
-                        <p class="field-value">__________________</p>
+<p class="field-value" id="profileDepartment">
+    __________________
+</p>
                     </div>
                 </div>
 
                 <div class="profile-field">
                     <span class="field-icon">📚</span>
                     <div>
-                        <p class="field-label">Semester</p>
-                        <p class="field-value">__________________</p>
+                       <p class="field-label">Semester</p>
+<p class="field-value" id="profileSemesterValue">
+    __________________
+</p>
                     </div>
                 </div>
 
@@ -229,7 +254,9 @@
                     <span class="field-icon">🆔</span>
                     <div>
                         <p class="field-label">Batch / Year</p>
-                        <p class="field-value placeholder">Not added yet</p>
+                        <p class="field-value placeholder" id="profileBatch">
+    Not added yet
+</p>
                     </div>
                 </div>
 
@@ -256,10 +283,74 @@
     </main>
 
 </div>
+<script src="../JavaScript/script.js"></script>
+<script src="../JavaScript/studentData.js"></script>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    const student = getCurrentStudent();
+
+    if (!student) {
+
+        window.location.href = "login.html";
+
+        return;
+
+    }
 
 
-<script src="C:\Users\shahm\OneDrive\Desktop\Student Hub Portal\JavaScript\script.js"></script>
+    /* =========================
+       PROFILE HEADER
+       ========================= */
 
+    document.getElementById("profileName").textContent =
+        student.name;
+
+    document.getElementById("profileCourse").textContent =
+        student.course;
+
+    document.getElementById("profileSemester").textContent =
+        student.semester;
+
+
+    /* =========================
+       PERSONAL INFORMATION
+       ========================= */
+
+    document.getElementById("profileFullName").textContent =
+        student.name;
+
+    document.getElementById("profileEmail").textContent =
+        student.email;
+
+    document.getElementById("profileMobile").textContent =
+        student.mobile || "Not added yet";
+
+    document.getElementById("profileAddress").textContent =
+        student.address || student.city || "Not added yet";
+
+
+    /* =========================
+       ACADEMIC INFORMATION
+       ========================= */
+
+    document.getElementById("profileEnrollment").textContent =
+        student.enrollment;
+
+    document.getElementById("profileDepartment").textContent =
+        student.course;
+
+    document.getElementById("profileSemesterValue").textContent =
+        student.semester;
+
+    document.getElementById("profileBatch").textContent =
+        student.batch || "Not added yet";
+
+});
+
+</script>
 </body>
 
 </html>

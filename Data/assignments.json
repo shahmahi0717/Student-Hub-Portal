@@ -1,0 +1,52 @@
+[
+    {
+        "id": "A001",
+        "title": "Fetch API and JSON Practical",
+        "subject": "Web Development",
+        "faculty": "Prof. Shah",
+        "assignedDate": "2026-09-20",
+        "dueDate": "2026-10-05",
+        "status": "Pending",
+        "description": "Implement Fetch API to retrieve JSON data and dynamically display it on a web page."
+    },
+    {
+        "id": "A002",
+        "title": "Sorting Algorithms",
+        "subject": "Data Structures",
+        "faculty": "Prof. Patel",
+        "assignedDate": "2026-09-22",
+        "dueDate": "2026-10-08",
+        "status": "Pending",
+        "description": "Implement Selection Sort, Insertion Sort and Bubble Sort and compare their performance."
+    },
+    {
+        "id": "A003",
+        "title": "SQL Query Assignment",
+        "subject": "Database Management System",
+        "faculty": "Prof. Mehta",
+        "assignedDate": "2026-09-18",
+        "dueDate": "2026-10-03",
+        "status": "Submitted",
+        "description": "Write SQL queries using joins, aggregate functions, subqueries and grouping."
+    },
+    {
+        "id": "A004",
+        "title": "Network Protocol Analysis",
+        "subject": "Computer Networks",
+        "faculty": "Prof. Desai",
+        "assignedDate": "2026-09-25",
+        "dueDate": "2026-10-15",
+        "status": "Pending",
+        "description": "Study and analyze commonly used network communication protocols."
+    },
+    {
+        "id": "A005",
+        "title": "Software Development Life Cycle",
+        "subject": "Software Engineering",
+        "faculty": "Prof. Joshi",
+        "assignedDate": "2026-09-28",
+        "dueDate": "2026-10-18",
+        "status": "Pending",
+        "description": "Prepare a report explaining different software development life cycle models."
+    }
+]
