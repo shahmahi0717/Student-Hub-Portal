@@ -86,106 +86,52 @@
     <script src="../JavaScript/script.js"></script>
     <script src="../JavaScript/studentData.js"></script>
 
+
 <script>
+document.getElementById("registrationForm").addEventListener(
+    "submit",
+    async function (event) {
+        event.preventDefault();
 
-document.addEventListener(
-    "DOMContentLoaded",
-    async function() {
+        const password = document.getElementById("password").value;
+        const confirmPassword =
+            document.getElementById("confirmPassword").value;
 
-        await initializeStudentData();
-
-
-        const registrationForm =
-            document.getElementById(
-                "registrationForm"
-            );
-
-
-        if (!registrationForm) {
+        if (password !== confirmPassword) {
+            alert("Passwords do not match.");
             return;
         }
 
+        const student = {
+            name: document.getElementById("name").value.trim(),
+            enrollment: document.getElementById("enrollment").value.trim(),
+            email: document.getElementById("email").value.trim(),
+            mobile: document.getElementById("mobile").value.trim(),
+            course: document.getElementById("department").value.trim(),
+            semester: document.getElementById("semester").value.trim(),
+            password: password
+        };
 
-        registrationForm.addEventListener(
-            "submit",
-            function(event) {
+        try {
+            const response = await fetch("../PHP/register.php", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(student)
+            });
 
-                event.preventDefault();
+            const result = await response.json();
+            alert(result.message);
 
-
-                const student = {
-
-                    name:
-                        document
-                            .getElementById("name")
-                            .value
-                            .trim(),
-
-                    email:
-                        document
-                            .getElementById("email")
-                            .value
-                            .trim(),
-
-                    password:
-                        document
-                            .getElementById("password")
-                            .value,
-
-                    mobile:
-                        document
-                            .getElementById("mobile")
-                            .value
-                            .trim(),
-
-                    course:
-                        document
-                            .getElementById("department")
-                            .value
-                            .trim(),
-
-                    semester:
-                        document
-                            .getElementById("semester")
-                            .value
-                            .trim(),
-
-                    enrollment:
-                        document
-                            .getElementById("enrollment")
-                            .value
-                            .trim()
-
-                };
-
-
-                const result =
-                    registerStudent(student);
-
-
-                if (result.success) {
-
-                    alert(
-                        "Registration successful!"
-                    );
-
-                    window.location.href =
-                        "login.html";
-
-                } else {
-
-                    alert(
-                        result.message
-                    );
-
-                }
-
+            if (response.ok && result.success) {
+                window.location.href = "login.html";
             }
-        );
-
+        } catch (error) {
+            alert("Cannot connect to the server. Check XAMPP.");
+        }
     }
 );
-
 </script>
 </body>
 

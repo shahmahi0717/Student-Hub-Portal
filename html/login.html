@@ -100,85 +100,38 @@
 <script src="../JavaScript/script.js"></script>
 <script src="../JavaScript/studentData.js"></script>
 
+
 <script>
+document.getElementById("loginForm").addEventListener(
+    "submit",
+    async function (event) {
+        event.preventDefault();
 
-document.addEventListener(
-    "DOMContentLoaded",
-    async function() {
+        const credentials = {
+            email: document.getElementById("loginEmail").value.trim(),
+            password: document.getElementById("loginPassword").value
+        };
 
-        /*
-           Make sure students.json
-           has been loaded.
-        */
+        try {
+            const response = await fetch("../PHP/login.php", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(credentials)
+            });
 
-        await initializeStudentData();
+            const result = await response.json();
+            alert(result.message);
 
-
-        const loginForm =
-            document.getElementById(
-                "loginForm"
-            );
-
-
-        if (!loginForm) {
-            return;
-        }
-
-
-        loginForm.addEventListener(
-            "submit",
-            function(event) {
-
-                event.preventDefault();
-
-
-                const email =
-                    document
-                        .getElementById(
-                            "loginEmail"
-                        )
-                        .value
-                        .trim();
-
-
-                const password =
-                    document
-                        .getElementById(
-                            "loginPassword"
-                        )
-                        .value;
-
-
-                const result =
-                    loginStudent(
-                        email,
-                        password
-                    );
-
-
-                if (result.success) {
-
-                    alert(
-                        "Login successful!"
-                    );
-
-                    window.location.href =
-                        "dashboard.html";
-
-                } else {
-
-                    alert(
-                        result.message
-                    );
-
-                }
-
+            if (response.ok && result.success) {
+                window.location.href = "dashboard.html";
             }
-        );
-
+        } catch (error) {
+            alert("Cannot connect to the server. Check XAMPP.");
+        }
     }
 );
-
 </script>
 
 </body>
