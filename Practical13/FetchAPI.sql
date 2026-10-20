@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS practical13
+    CHARACTER SET utf8mb4
+    COLLATE utf8mb4_general_ci;
+
+USE practical13;
+
+CREATE TABLE IF NOT EXISTS FetchAPI (
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL UNIQUE,
+    course ENUM('BCA', 'BSc IT', 'BTech') NOT NULL,
+    PRIMARY KEY (id)
+);

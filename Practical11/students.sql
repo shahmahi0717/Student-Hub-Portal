@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS practical11_db;
+
+USE practical11_db;
+
+CREATE TABLE IF NOT EXISTS students (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL UNIQUE,
+    course ENUM('BCA', 'BSc IT', 'BTech') NOT NULL
+);
