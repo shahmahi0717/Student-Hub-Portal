@@ -115,3 +115,5 @@ CREATE TABLE IF NOT EXISTS library (
         REFERENCES students(id)
         ON DELETE CASCADE
 );
+ALTER TABLE students
+ADD COLUMN role VARCHAR(20) NOT NULL DEFAULT 'Student';
