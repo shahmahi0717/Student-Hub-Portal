@@ -1,139 +1,106 @@
-<!DOCTYPE html>
-<html>
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Login - StudentHub Portal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - StudentHub Portal</title>
     <link rel="stylesheet" href="../Style css/style.css">
 </head>
-
 <body>
 
-    <table width="100%" height="100%">
+    <br><br>
 
+    <table border="1" align="center" cellpadding="20" width="450">
         <tr>
+            <td>
+                <h2 align="center">REGISTRATION</h2>
 
-            <td align="center" valign="middle">
+                <form id="registrationForm">
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" required><br><br>
 
-                <h1>StudentHub Portal</h1>
+                    <label for="enrollment">Enrollment Number</label><br>
+                    <input type="text" id="enrollment" required><br><br>
 
-                <p>Welcome back! Please login to continue.</p>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" required><br><br>
 
-                <table border="1" cellpadding="25" width="420">
+                    <label for="mobile">Mobile Number</label><br>
+                    <input type="tel" id="mobile"
+                           maxlength="10" pattern="[0-9]{10}" required><br><br>
 
-                    <tr>
+                    <label for="department">Department</label><br>
+                    <input type="text" id="department" required><br><br>
 
-                        <td>
+                    <label for="semester">Semester</label><br>
+                    <input type="number" id="semester"
+                           min="1" max="12" required><br><br>
 
-                            <form id="loginForm">
+                    <label for="password">Password</label><br>
+                    <input type="password" id="password"
+                           minlength="8" required><br><br>
 
-                                <label>Email Address</label>
+                    <label for="confirmPassword">Confirm Password</label><br>
+                    <input type="password" id="confirmPassword"
+                           minlength="8" required><br><br>
 
-                                <br>
-
-                                <input
-    type="email"
-    id="loginEmail"
-    size="45"
-    required
->
-
-                                <br>
-
-                                <label>Password</label>
-
-                                <br>
-
-                               <input
-    type="password"
-    id="loginPassword"
-    size="45"
-    required
->
-
-                                <br>
-
-                                <label>
-    <a href="forgotpassword.html">
-    Forgot Password?
-</a>
-
-<br>
-
-<div align="center">
-    <label>
-        <input type="checkbox">
-        Remember Me
-    </label>
-</div>
-
-<br>
-
-                                <button type="submit" style="width:100%;">
-                                    Login
-                                </button>
-
-                                <br><br>
-
-                                <p align="center">
-
-                                    Don't have an account?
-
-                                    <a href="register.html">
-                                        Sign Up
-                                    </a>
-
-                                </p>
-
-                            </form>
-
-                        </td>
-
-                    </tr>
-
-                </table>
-
+                    <p align="center">
+                        <button type="submit">Register</button>
+                        <br><br>
+                        Already have an account?
+                        <a href="login.html">Login</a>
+                    </p>
+                </form>
             </td>
-
         </tr>
-
     </table>
-<script src="../JavaScript/script.js"></script>
-<script src="../JavaScript/studentData.js"></script>
 
+    <script>
+    document.getElementById("registrationForm").addEventListener(
+        "submit", async function(event) {
+            event.preventDefault();
 
-<script>
-document.getElementById("loginForm").addEventListener(
-    "submit",
-    async function (event) {
-        event.preventDefault();
+            const password = document.getElementById("password").value;
+            const confirmPassword =
+                document.getElementById("confirmPassword").value;
 
-        const credentials = {
-            email: document.getElementById("loginEmail").value.trim(),
-            password: document.getElementById("loginPassword").value
-        };
-
-        try {
-            const response = await fetch("../PHP/login.php", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(credentials)
-            });
-
-            const result = await response.json();
-            alert(result.message);
-
-            if (response.ok && result.success) {
-                window.location.href = "dashboard.html";
+            if (password !== confirmPassword) {
+                alert("Passwords do not match.");
+                return;
             }
-        } catch (error) {
-            alert("Cannot connect to the server. Check XAMPP.");
+
+            const student = {
+                name: document.getElementById("name").value.trim(),
+                enrollment: document.getElementById("enrollment").value.trim(),
+                email: document.getElementById("email").value.trim(),
+                mobile: document.getElementById("mobile").value.trim(),
+                course: document.getElementById("department").value.trim(),
+                semester: document.getElementById("semester").value,
+                password: password
+            };
+
+            try {
+                const response = await fetch("../PHP/register.php", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(student)
+                });
+
+                const result = await response.json();
+                alert(result.message);
+
+                if (response.ok && result.success) {
+                    window.location.href = "login.html";
+                }
+            } catch (error) {
+                alert("Cannot connect to the server. Check XAMPP.");
+            }
         }
-    }
-);
-</script>
+    );
+    </script>
 
 </body>
-
 </html>
